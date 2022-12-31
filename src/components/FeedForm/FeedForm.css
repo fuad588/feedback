@@ -1,0 +1,26 @@
+.form{
+    display: flex;
+    width: 240px;
+}
+.form form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 240px;
+}
+form input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgb(6, 161, 227);
+}
+button{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: rgb(6, 161, 227);
+    border: none;
+    color: antiquewhite;
+    border-radius: 10px;
+    cursor: pointer;
+}
