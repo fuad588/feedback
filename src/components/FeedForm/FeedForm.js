@@ -2,7 +2,11 @@ import React from 'react'
 import './FeedForm.css'
 import PropTypes from 'prop-types';
 function Form(props){
-  let {name, surname, email, comment} = props
+  let {name, surname, email, comment, message} = props
+  const newMessage = (event) =>{
+    event.preventDefault()
+    document.querySelector('p').innerHTML = message;
+  }
     return (
       <div className='form'>
         <form action="submit">
@@ -14,7 +18,8 @@ function Form(props){
             <input type="email" id="email" />
             <label htmlFor="comment">{comment}</label>
             <input type="text" id="comment" />
-            <button>Göndər</button>
+            <button  onClick={newMessage}>Göndər</button>
+            <p></p>
         </form>
       </div>
     )
